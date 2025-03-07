@@ -33,7 +33,6 @@ public class HelloWorld implements RequestHandler<Map<String, Object>, Map<Strin
 			response.put("statusCode", 400);
 			response.put("error", "Bad Request: " + method + " " + path + " is not a valid endpoint.");
 		}
-
 		return response;
 	}
 }
